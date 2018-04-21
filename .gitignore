@@ -12,6 +12,11 @@
 # misc
 .idea
 .DS_Store
+.env
+.eslintrc
+.npmrc
+.nvmrc
+.travis.yml
 .env.local
 .env.development.local
 .env.test.local
