@@ -12,12 +12,18 @@
       grid-row: 1;
       grid-column-start: 1;
       grid-column-end: 4;
-      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 280px;
       height: 80px;
       border-bottom: 1px solid $grey-border;
       img {
-        width: 5%;
-        margin-top: 5px;
+        width: 6%;
+      }
+      h6 {
+        margin: 0px;
+        font-size: 1em;
+        margin-top: 35px;
+        color: $blue;
       }
     }
     .grey {
