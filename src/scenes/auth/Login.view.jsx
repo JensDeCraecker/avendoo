@@ -8,7 +8,7 @@ class View extends Component {
     return (
       <div className="view">
         <UpperBar />
-        <div className="green" />
+        <div className="grey" />
         <div className="blue" />
       </div>
     );
