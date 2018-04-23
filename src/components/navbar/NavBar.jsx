@@ -1,17 +1,17 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
-const NavBar = (props) => {
+const NavBar = props => {
   return (
-    <div className='app-header'>
-      <section>
-        <img src={logo} className='app-logo' alt='logo' />
-        <h2>iCapps Boilerplate</h2>
-      </section>
-      <section>
-        <h3>Welcome {props.username}</h3>
-      </section>
+    <div className="app-header">
+      <h2>Gebruiker</h2>
+      <NavLink to="/brood" className="bread">
+        Brood
+      </NavLink>
+      <NavLink to="/waar"> Waar? </NavLink>
+      <NavLink to="/favorieten"> Favorieten </NavLink>
+      <NavLink to="/aanbiedingen"> Aanbiedingen </NavLink>
     </div>
   );
 };

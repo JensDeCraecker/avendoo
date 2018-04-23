@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import NavBar from '../../components/navbar/NavBar';
+
 import './Login.style.css';
 
 class View extends Component {
@@ -7,7 +9,7 @@ class View extends Component {
     return (
       <div className="view">
         <div className="red" />
-        <div className="green" />
+        <NavBar />
         <div className="blue" />
       </div>
     );
