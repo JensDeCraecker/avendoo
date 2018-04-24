@@ -6,12 +6,18 @@ const NavBar = props => {
   return (
     <div className="app-header">
       <h2>Gebruiker</h2>
-      <NavLink to="/brood" className="bread">
+      <NavLink to="/" className="icon-bread">
         Brood
       </NavLink>
-      <NavLink to="/waar"> Waar? </NavLink>
-      <NavLink to="/favorieten"> Favorieten </NavLink>
-      <NavLink to="/aanbiedingen"> Aanbiedingen </NavLink>
+      <NavLink to="/waar" className="icon-place">
+        Waar?
+      </NavLink>
+      <NavLink to="/favorieten" className="icon-favorite">
+        Favorieten
+      </NavLink>
+      <NavLink to="/aanbiedingen" className="icon-deal">
+        Aanbiedingen
+      </NavLink>
     </div>
   );
 };

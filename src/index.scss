@@ -1,8 +1,56 @@
 @font-face {
+  font-family: 'hk_novaregular';
+  font-style: normal;
+  src: local('HKNova-Regular'), local('HKNovaRegular'), url('./assets/fonts/hknova-regular-webfont.woff2') format('woff2'), url('./assets/fonts/hknova-regular-webfont.woff') format('woff'),
+    url('./assets/fonts/hknova-regular-webfont.ttf') format('truetype'), url('./assets/fonts/hknova-regular-webfont.svg#hk_novaregular') format('svg');
+}
+@font-face {
+  font-family: 'hk_novabold';
+  font-style: normal;
+  src: local('HKNova-Bold'), local('HKNovaBold'), url('./assets/fonts/hknova-bold-webfont.woff2') format('woff2'), url('./assets/fonts/hknova-bold-webfont.woff') format('woff'),
+    url('./assets/fonts/hknova-bold-webfont.ttf') format('truetype'), url('./assets/fonts/hknova-bold-webfont.svg#hk_novaregular') format('svg');
+}
+@font-face {
+  font-family: 'hk_novaextrabold';
+  font-style: normal;
+  src: local('HKNova-Extrabold'), local('HKNovaExtrabold'), url('./assets/fonts/hknova-extraboldr-webfont.woff2') format('woff2'), url('./assets/fonts/hknova-extraboldr-webfont.woff') format('woff'),
+    url('./assets/fonts/hknova-extraboldr-webfont.ttf') format('truetype'), url('./assets/fonts/hknova-extraboldr-webfont.svg#hk_novaregular') format('svg');
+}
+@font-face {
+  font-family: 'hk_novamedium';
+  font-style: normal;
+  src: local('HKNova-Medium'), local('HKNovaMedium'), url('./assets/fonts/hknova-mediumr-webfont.woff2') format('woff2'), url('./assets/fonts/hknova-mediumr-webfont.woff') format('woff'),
+    url('./assets/fonts/hknova-mediumr-webfont.ttf') format('truetype'), url('./assets/fonts/hknova-mediumr-webfont.svg#hk_novaregular') format('svg');
+}
+@font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?fjawmh');
-  src: url('fonts/icomoon.eot?fjawmh#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?fjawmh') format('truetype'), url('fonts/icomoon.woff?fjawmh') format('woff'),
-    url('fonts/icomoon.svg?fjawmh#icomoon') format('svg');
+  src: url('./assets/fonts/icomoon.eot?88tc2b');
+  src: url('./assets/fonts/icomoon.eot?88tc2b#iefix') format('embedded-opentype'), url('./assets/fonts/icomoon.ttf?88tc2by') format('truetype'),
+    url('./assets/fonts/icomoon.woff?88tc2b') format('woff'), url('./assets/fonts/icomoon.svg?88tc2b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'hk_novaregular', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  text-rendering: geometricPrecision;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('./assets/fonts/icomoon.eot?nrywic');
+  src: url('./assets/fonts/icomoon.eot?nrywic#iefix') format('embedded-opentype'), url('./assets/fonts/icomoon.ttf?nrywic') format('truetype'), url('./assets/fonts/icomoon.woff?nrywic') format('woff'),
+    url('./assets/fonts/icomoon.svg?nrywic#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,22 +81,12 @@
 .icon-noun_1100755_cc:before {
   content: '\e902';
 }
-.icon-noun_1112146_cc:before {
+.icon-location:before {
   content: '\e903';
+}
+.icon-cross:before {
+  content: '\e904';
 }
 .icon-star-empty:before {
   content: '\e9d7';
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 10px;
-}
-
-body {
-  min-width: 100vw;
-  min-height: 100vh;
-  font-size: 1.4rem;
 }
