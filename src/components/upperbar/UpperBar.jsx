@@ -1,9 +1,9 @@
 import React from 'react';
-import './upperbar.scss';
+import './upperbar.css';
 
 import moment from 'moment';
 
-import logo from '../../images/logo_ven.svg';
+import logo from '../../images/logo.png';
 
 const UpperBar = props => {
   const date = moment().format('LLLL');

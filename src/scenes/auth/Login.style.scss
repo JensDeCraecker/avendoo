@@ -6,26 +6,8 @@
 
   .view {
     display: grid;
-    grid-template-rows: 7% 1fr;
+    grid-template-rows: 80px 1fr;
     grid-template-columns: 220px 320px 1fr;
-    .upperbar {
-      grid-row: 1;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      display: grid;
-      grid-template-columns: 1fr 280px;
-      height: 80px;
-      border-bottom: 1px solid $grey-border;
-      img {
-        width: 6%;
-      }
-      h6 {
-        margin: 0px;
-        font-size: 1em;
-        margin-top: 35px;
-        color: $blue;
-      }
-    }
     .grey {
       background-color: $grey;
       grid-row: 2;
