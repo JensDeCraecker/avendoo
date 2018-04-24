@@ -1,0 +1,19 @@
+@import '../../utils/_colors.scss';
+
+.info {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 150px 1fr 150px;
+  button {
+    grid-row: 1;
+    grid-column: 2;
+    width: 25%;
+    margin-top: 12px;
+    justify-self: end;
+    font-weight: bold;
+  }
+  button:before {
+    font-family: 'icomoon';
+    content: '\e901';
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 
 import NavBar from '../../components/navbar/NavBar';
 import UpperBar from '../../components/upperbar/UpperBar';
+import Info from '../../components/info/Info';
 
 const Bread = props => {
   return (
@@ -9,7 +10,7 @@ const Bread = props => {
       <NavBar />
       <UpperBar />
       <div className="blue" />
-      <p> brood </p>
+      <Info />
     </div>
   );
 };
