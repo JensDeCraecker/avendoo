@@ -1,17 +1,21 @@
+@import '../../utils/_colors.scss';
+
 .app-header {
   padding: 2rem;
   font-size: 1.2em;
-  color: red;
   list-style-type: none;
+  background-color: $grey;
   h2 {
-    color: green;
-    font-size: 1.4em;
+    color: grey;
+    font-size: 1.2em;
     margin-bottom: 15px;
     margin-top: 0;
+    font-weight: 600;
+    font-family: 'hk_novamedium';
   }
   a {
     text-decoration: none;
-    color: purple;
+    color: grey;
     display: flex;
     margin-bottom: 10px;
   }

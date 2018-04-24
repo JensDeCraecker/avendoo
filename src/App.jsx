@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import UnauthorizedLayout from './routes/UnauthorizedLayout';
+import UnauthorizedRoute from './routes/UnauthorizedRoute';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={UnauthorizedLayout} />
+          <UnauthorizedRoute path="/" component={UnauthorizedLayout} />
         </Switch>
       </BrowserRouter>
     );
