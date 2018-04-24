@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UpperBar from '../../components/upperbar/UpperBar';
 
 import NavBar from '../../components/navbar/NavBar';
 
@@ -8,8 +9,8 @@ class View extends Component {
   render() {
     return (
       <div className="view">
-        <div className="red" />
         <NavBar />
+        <UpperBar />
         <div className="blue" />
       </div>
     );

@@ -1,0 +1,24 @@
+@import '../../utils/_colors.scss';
+
+.upperbar {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  height: 80px;
+  border-bottom: 1px solid $grey-border;
+  z-index: 1;
+  img {
+    padding: 0px;
+    width: 8%;
+    margin-top: 3px;
+    margin-left: 20px;
+  }
+  h6 {
+    margin: 0px;
+    font-size: 1em;
+    margin-top: 35px;
+    color: $blue;
+  }
+}
