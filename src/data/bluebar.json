@@ -1,0 +1,32 @@
+{
+  "brood": [
+    {
+      "straat": "Ternesselei",
+      "bakker": "Bakker Wouters",
+      "wit": "5",
+      "grof": "3",
+      "bruin": "8"
+    },
+    {
+      "straat": "Laarstraat",
+      "bakker": "Bakker Janssens",
+      "wit": "1",
+      "grof": "2",
+      "bruin": "3"
+    },
+    {
+      "straat": "Maasfortbaan",
+      "bakker": "Bakker De Craecker",
+      "wit": "8",
+      "grof": "4",
+      "bruin": "2"
+    },
+    {
+      "straat": "Oostmalsesteenweg",
+      "bakker": "Bakker Verheyen",
+      "wit": "1",
+      "grof": "8",
+      "bruin": "8"
+    }
+  ]
+}
