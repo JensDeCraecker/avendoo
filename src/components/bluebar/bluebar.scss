@@ -1,5 +1,22 @@
 @import '../../utils/_colors.scss';
 
-div {
+.blue {
   background-color: $blue;
+  padding-bottom: 20px;
+  input {
+    border: 0;
+    width: 30px;
+    height: 15px;
+    border-radius: 8px;
+    margin: 10px 0 0 9px;
+    padding: 10px;
+    font-size: 1em;
+    transition: width 1s;
+  }
+  input:hover {
+    width: 280px;
+  }
+  input:before {
+    content: 'test';
+  }
 }

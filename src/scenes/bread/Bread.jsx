@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../../components/navbar/NavBar';
 import UpperBar from '../../components/upperbar/UpperBar';
 import BlueBar from '../../components/bluebar/BlueBar';
+import InfoBar from '../../components/infobar/InfoBar';
 
 const Bread = props => {
   return (
@@ -10,7 +11,7 @@ const Bread = props => {
       <NavBar />
       <UpperBar />
       <BlueBar />
-      <p> brood </p>
+      <InfoBar />
     </div>
   );
 };

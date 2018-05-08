@@ -1,0 +1,24 @@
+@import '../../utils/_colors.scss';
+
+.smallinfo {
+  background-color: $blue;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: $info;
+  margin-top: 20px;
+  padding-bottom: 2px;
+  .updated,
+  .new {
+    font-size: 0.8em;
+  }
+  .updated {
+    font-size: 0.8em;
+    margin-bottom: 0;
+    font-family: 'hk_novamedium';
+  }
+  .new {
+    margin: 5px;
+    font-family: 'hk_novaregular';
+  }
+}

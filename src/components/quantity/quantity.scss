@@ -1,0 +1,22 @@
+@import '../../utils/_colors.scss';
+
+.quantity {
+  background-color: $blue;
+  width: 25%;
+  border-radius: 10px;
+  p {
+    text-align: center;
+  }
+  .icon-sort {
+    margin-bottom: 5px;
+  }
+  .icon-sort:before {
+    content: '\e901';
+    font-size: 20px;
+  }
+  .number {
+    font-size: 1.6em;
+    margin: 0 0 5px 0;
+    font-weight: lighter;
+  }
+}

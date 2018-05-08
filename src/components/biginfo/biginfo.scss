@@ -1,0 +1,21 @@
+@import '../../utils/_colors.scss';
+
+.biginfo {
+  background-color: $blue;
+  color: white;
+  width: 25%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: $info;
+  .icon-sort {
+    font-size: 2em;
+  }
+  .price {
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+  .all {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 
 import UpperBar from '../../components/upperbar/UpperBar';
 import NavBar from '../../components/navbar/NavBar';
+import BlueBar from '../../components/bluebar/BlueBar';
 
 import '../auth/Login.style.css';
 
@@ -10,7 +11,7 @@ const Place = props => {
     <div className="view">
       <NavBar />
       <UpperBar />
-      <div className="blue" />
+      <BlueBar />
       <p> waar? </p>
     </div>
   );
