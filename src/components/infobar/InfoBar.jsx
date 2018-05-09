@@ -4,6 +4,7 @@ import BigInfo from '../biginfo/BigInfo';
 import SmallInfo from '../smallinfo/SmallInfo';
 import Button from '../button/Button';
 import PopUp from '../popup/PopUp';
+import GoogleMapsContainer from '../googlemapscontainer/GoogleMapsContainer';
 
 import './infobar.css';
 
@@ -23,15 +24,18 @@ class InfoBar extends Component {
     return (
       <div className="infobar">
         <h2>Lange Nieuwstraat</h2>
-        <div className="all">
+        <section className="all">
           <BigInfo sort="Wit" price="€1,5" />
           <BigInfo sort="Grof" price="€1,5" />
           <BigInfo sort="Bruin" price="€1,5" />
-        </div>
-        <div className="all_info">
+        </section>
+        <section className="all_info">
           <SmallInfo updated="Laatst aangevuld" new="Dinsdag 7 mei 2018" />
           <SmallInfo updated="Nieuw brood verwacht" new="Dinsdag 8 mei 2018" />
-        </div>
+        </section>
+        <section className="google">
+          <GoogleMapsContainer />
+        </section>
         <Button onClickCallback={this.togglePopup}> Melding </Button>
         {this.state.showPopup && (
           <PopUp text="Melding aangeven" closePopup={this.togglePopup} className="test">
