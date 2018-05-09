@@ -7,7 +7,7 @@
   box-shadow: $box;
   margin: 70px auto;
   display: grid;
-  grid-template-rows: 100px 170px 1fr 50px;
+  grid-template-rows: 100px 60px 180px 1fr 50px;
   grid-template-columns: 1fr 1fr 200px;
   h2 {
     margin-left: 18px;
@@ -17,14 +17,24 @@
     grid-column-end: 4;
     color: $blue;
   }
-
+  h3 {
+    margin-left: 18px;
+    margin-top: 0;
+  }
+  .all {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-around;
+  }
   button {
     color: $blue;
     width: 70%;
     background-color: $grey;
     border: 0;
     box-shadow: $box;
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 3;
     justify-self: center;
     margin-bottom: 10px;
