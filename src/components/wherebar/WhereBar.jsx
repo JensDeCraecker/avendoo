@@ -1,11 +1,13 @@
 import React from 'react';
 
-import GoogleMapsContainer from '../../components/googlemapscontainer/GoogleMapsContainer';
+import GoogleMapsContainerPlace from '../../components/googlemapscontainerplace/GoogleMapsContainerPlace';
 
 const WhereBar = props => {
   return (
     <div className="infobar">
-      <GoogleMapsContainer />
+      <section classname="wheregoogle">
+        <GoogleMapsContainerPlace />
+      </section>
     </div>
   );
 };
