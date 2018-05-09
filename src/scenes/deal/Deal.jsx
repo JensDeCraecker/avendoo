@@ -2,7 +2,7 @@ import React from 'react';
 
 import NavBar from '../../components/navbar/NavBar';
 import UpperBar from '../../components/upperbar/UpperBar';
-import BlueBar from '../../components/bluebar/BlueBar';
+import DealsBluebar from '../../components/dealsbluebar/DealsBluebar';
 import DealBar from '../../components/dealbar/DealBar';
 
 const Deal = props => {
@@ -10,7 +10,7 @@ const Deal = props => {
     <div className="view">
       <NavBar />
       <UpperBar />
-      <BlueBar />
+      <DealsBluebar />
       <DealBar />
     </div>
   );

@@ -2,10 +2,22 @@ import React, { Component } from 'react';
 
 import Button from '../button/Button';
 import BigInfo from '../biginfo/BigInfo';
+import PopUp from '../popup/PopUp';
 
 import './dealbar.css';
 
 class DealBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showPopup: false,
+    };
+  }
+  togglePopup = () => {
+    this.setState({
+      showPopup: !this.state.showPopup,
+    });
+  };
   render() {
     return (
       <div className="dealbar">
@@ -17,6 +29,12 @@ class DealBar extends Component {
           <BigInfo sort="Bruin" price="€1,5" />
         </div>
         <Button onClickCallback={this.togglePopup}> Melding </Button>
+        {this.state.showPopup && (
+          <PopUp text="Melding aangeven" closePopup={this.togglePopup} className="test">
+            <Button> INTREKKEN </Button>
+            <p onClick={this.togglePopup}>ANNULEREN</p>
+          </PopUp>
+        )}
       </div>
     );
   }
