@@ -3,6 +3,7 @@ import React from 'react';
 import UpperBar from '../../components/upperbar/UpperBar';
 import NavBar from '../../components/navbar/NavBar';
 import BlueBar from '../../components/bluebar/BlueBar';
+import WhereBar from '../../components/wherebar/WhereBar';
 
 import '../auth/Login.style.css';
 
@@ -12,7 +13,7 @@ const Place = props => {
       <NavBar />
       <UpperBar />
       <BlueBar />
-      <p> waar? </p>
+      <WhereBar />
     </div>
   );
 };

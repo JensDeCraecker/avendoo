@@ -7,7 +7,7 @@
   box-shadow: $box;
   margin: 70px auto;
   display: grid;
-  grid-template-rows: 100px 60px 180px 1fr 50px;
+  grid-template-rows: 60px 60px 180px 1fr 50px;
   grid-template-columns: 1fr 1fr 200px;
   h2 {
     margin-left: 18px;
@@ -27,6 +27,15 @@
     grid-column-end: 4;
     display: flex;
     justify-content: space-around;
+  }
+  .google {
+    left: 20px;
+    top: -240px;
+    grid-row: 4;
+  }
+  .dealgoogle {
+    position: relative;
+    top: 50px;
   }
   button {
     color: $blue;

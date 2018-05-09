@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Button from '../button/Button';
 import BigInfo from '../biginfo/BigInfo';
 import PopUp from '../popup/PopUp';
+import GoogleMapsContainer from '../googlemapscontainer/GoogleMapsContainer';
 
 import './dealbar.css';
 
@@ -28,6 +29,9 @@ class DealBar extends Component {
           <BigInfo sort="Grof" price="€1,5" />
           <BigInfo sort="Bruin" price="€1,5" />
         </div>
+        <section className="google dealgoogle">
+          <GoogleMapsContainer />
+        </section>
         <Button onClickCallback={this.togglePopup}> Melding </Button>
         {this.state.showPopup && (
           <PopUp text="Melding aangeven" closePopup={this.togglePopup} className="test">
