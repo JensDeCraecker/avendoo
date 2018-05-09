@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './place.css';
+
 import UpperBar from '../../components/upperbar/UpperBar';
 import NavBar from '../../components/navbar/NavBar';
 import BlueBar from '../../components/bluebar/BlueBar';
@@ -12,7 +14,7 @@ const Place = props => {
     <div className="view">
       <NavBar />
       <UpperBar />
-      <BlueBar />
+      <div className="blue" />
       <WhereBar />
     </div>
   );
