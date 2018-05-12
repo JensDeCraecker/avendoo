@@ -5,7 +5,7 @@ import GoogleMapsContainerPlace from '../../components/googlemapscontainerplace/
 const WhereBar = props => {
   return (
     <div className="infobar">
-      <section classname="wheregoogle">
+      <section className="wheregoogle">
         <GoogleMapsContainerPlace />
       </section>
     </div>

@@ -2,18 +2,24 @@
 
 .blue {
   background-color: $blue;
-  padding-bottom: 20px;
   input {
     border: 0;
     width: 30px;
     height: 15px;
     border-radius: 8px;
     margin: 10px 0 0 9px;
-    padding: 10px;
+    padding: 10px 0 40px;
     font-size: 1em;
     transition: width 1s;
   }
   input:hover {
-    width: 280px;
+    width: 100px;
+  }
+  .fa {
+    position: absolute;
+    top: 12px;
+    left: 270px;
+    color: $blue;
+    font-size: 2em;
   }
 }

@@ -33,7 +33,7 @@ class GoogleMapsContainerPlace extends React.Component {
   render() {
     const style = {
       width: '46vw',
-      height: '80vh',
+      height: '76vh',
     };
     return (
       <section className="placegoogle">

@@ -2,6 +2,7 @@
 
 .infobar {
   width: 80%;
+  height: 630px;
   border-radius: 10px;
   border: 1px solid $grey-border;
   box-shadow: $box;
@@ -16,6 +17,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     color: $blue;
+    font-family: 'hk_novamedium';
   }
   .all {
     grid-row: 2;

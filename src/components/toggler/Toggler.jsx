@@ -9,9 +9,9 @@ class Toggler extends React.Component {
     super();
     this.state = { value: false };
 
-    this.border = 2;
-    this.height = 19;
-    this.width = 50;
+    this.border = 4;
+    this.height = 20;
+    this.width = 60;
     this.bgcolor = 'rgba(0,0,0,0.2)';
     this.transition = '.4s ease';
   }

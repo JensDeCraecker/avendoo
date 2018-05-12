@@ -12,9 +12,6 @@ const NavBar = props => {
       <NavLink to="/waar" className="icon-place">
         Waar?
       </NavLink>
-      <NavLink to="/favorieten" className="icon-favorite">
-        Favorieten
-      </NavLink>
       <NavLink to="/aanbiedingen" className="icon-deal">
         Aanbiedingen
       </NavLink>

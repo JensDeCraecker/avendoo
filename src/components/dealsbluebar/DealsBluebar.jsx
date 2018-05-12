@@ -7,6 +7,7 @@ import DealsBreadinfo from '../dealsbreadinfo/DealsBreadinfo';
 const DealsBluebar = props => {
   return (
     <div className="blue">
+      <span className="fa fa-search" />
       <input />
       <DealsBreadinfo actie="2e brood gratis" bakker="Bakker De Craecker" />
       <DealsBreadinfo actie="1 kopen 1 gratis" bakker="Bakke Wouters" />

@@ -20,6 +20,7 @@
   h3 {
     margin-left: 18px;
     margin-top: 0;
+    color: $grey-text;
   }
   .all {
     grid-row: 3;
@@ -36,7 +37,7 @@
   }
   .dealgoogle {
     position: relative;
-    top: 50px;
+    top: 48px;
   }
   button {
     color: $blue;
@@ -48,5 +49,6 @@
     grid-column: 3;
     justify-self: center;
     margin-bottom: 10px;
+    font-family: 'hk_novabold';
   }
 }

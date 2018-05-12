@@ -18,18 +18,15 @@
     color: grey;
     display: flex;
     margin-bottom: 10px;
+    font-family: 'hk_novamedium';
   }
   .icon-bread:before {
     content: '\e901';
     font-size: 27px;
   }
   .icon-place:before {
-    content: '\e901';
+    content: '\e903';
     font-size: 25px;
-  }
-  .icon-favorite:before {
-    content: '\e9d7';
-    font-size: 18px;
   }
   .icon-deal:before {
     content: '\e900';
