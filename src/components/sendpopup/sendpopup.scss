@@ -77,3 +77,29 @@ svg {
     stroke-dashoffset: 900;
   }
 }
+
+.sendpopup {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  .sendpopup_inner {
+    position: absolute;
+    width: 705px;
+    left: 25%;
+    right: 20%;
+    top: 7%;
+    margin: auto;
+    background: white;
+    display: grid;
+    grid-template-rows: 70px 40px 50px 30px 30px;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-radius: 10px;
+    z-index: 3;
+  }
+}
