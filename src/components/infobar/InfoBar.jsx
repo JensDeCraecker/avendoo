@@ -23,7 +23,7 @@ class InfoBar extends Component {
   render() {
     return (
       <div className="infobar">
-        <h2>Lange Nieuwstraat</h2>
+        <h2>Lange</h2>
         <section className="all">
           <BigInfo sort="Wit" price="€1,5" />
           <BigInfo sort="Grof" price="€1,5" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 import './dealsbluebar.css';
 
@@ -9,11 +10,10 @@ const DealsBluebar = props => {
     <div className="blue">
       <span className="fa fa-search" />
       <input />
-      <DealsBreadinfo actie="2e brood gratis" bakker="Bakker De Craecker" />
-      <DealsBreadinfo actie="1 kopen 1 gratis" bakker="Bakke Wouters" />
-      <DealsBreadinfo actie="10% korting" bakker="Bakker Janssens" />
-      <DealsBreadinfo actie="Volgende keer gratis" bakker="Bakker Verheyen" />
-      <DealsBreadinfo actie="200g extra" bakker="Bakker Van Mol" />
+      {props.aanbiedingen.aanbiedingen.map((item, i) => {
+        const date = moment(item.geldigTot).format('DD/MM/YYYY');
+        return <DealsBreadinfo key={i} actie={item.actie} geldigTot={date} />;
+      })}
     </div>
   );
 };

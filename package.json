@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "dependencies": {
     "axios": "~0.18.0",
+    "connect": "^3.6.6",
     "date-fns": "^1.29.0",
     "google-maps-react": "^2.0.2",
     "moment": "^2.22.1",

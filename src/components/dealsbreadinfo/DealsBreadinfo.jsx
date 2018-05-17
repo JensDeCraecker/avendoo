@@ -8,7 +8,7 @@ const DealsBreadinfo = props => {
   return (
     <div className="white">
       <h2>{props.actie}</h2>
-      <h5>{props.bakker}</h5>
+      <h5>{props.geldigTot}</h5>
       <div className="all_bread">
         <Quantity sort="Wit" />
         <Quantity sort="Grof" />

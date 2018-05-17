@@ -38,7 +38,7 @@ class GoogleMapsContainerPlace extends React.Component {
     return (
       <section className="placegoogle">
         <Map item xs={12} style={style} google={this.props.google} onClick={this.onMapClick} zoom={14} initialCenter={{ lat: 51.2194475, lng: 4.40246430000002 }}>
-          <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: 51.2194475, lng: 4.40246430000002 }} name={'Changing Colors Garage'} />
+          <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: 51.217198, lng: 4.895167899999933 }} name={'Changing Colors Garage'} />
         </Map>
       </section>
     );
