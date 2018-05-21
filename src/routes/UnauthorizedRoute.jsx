@@ -17,8 +17,4 @@ class UnauthorizedRoute extends Component {
   }
 }
 
-const mapStateToProps = ({ user: userState }) => ({
-  pending: userState.pending,
-});
-
-export default connect(mapStateToProps)(UnauthorizedRoute);
+export default UnauthorizedRoute;

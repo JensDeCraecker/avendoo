@@ -4,7 +4,7 @@ function em(val) {
   return val / 16 + 'em';
 }
 
-class Toggler extends React.Component {
+class Toggler extends Component {
   constructor() {
     super();
     this.state = { value: false };
