@@ -10,7 +10,19 @@ const BlueBar = props => {
       <span className="fa fa-search" />
       <input />
       {props.automaten.automaten.map((item, i) => {
-        return <BreadInfo key={i} straat={item.adres} bakker={item.omschrijving} wit_quantity="" grof_quantity="" bruin_quantity="" />;
+        return (
+          <BreadInfo
+            key={i}
+            straat={item.adres}
+            bakker={item.omschrijving}
+            laatsteLevering={item.laatsteLevering}
+            volgendeLevering={item.volgendeLevering}
+            wit_quantity=""
+            grof_quantity=""
+            bruin_quantity=""
+            vendor={props.automaten}
+          />
+        );
       })}
     </div>
   );

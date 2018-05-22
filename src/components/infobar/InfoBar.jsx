@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 
 import BigInfo from '../biginfo/BigInfo';
 import SmallInfo from '../smallinfo/SmallInfo';
@@ -21,6 +22,8 @@ class InfoBar extends Component {
     });
   };
   render() {
+    const laatsteLevering = moment(this.props.laatsteLevering).format('DD/MM/YYYY');
+    const volgendeLevering = moment(this.props.volgendeLevering).format('DD/MM/YYYY');
     return (
       <div className="infobar">
         <h2>{this.props.straat}</h2>
@@ -30,8 +33,8 @@ class InfoBar extends Component {
           <BigInfo sort="Bruin" price="€1,5" />
         </section>
         <section className="all_info">
-          <SmallInfo updated="Laatst aangevuld" new="test" />
-          <SmallInfo updated="Nieuw brood verwacht" new="Dinsdag 8 mei 2018" />
+          <SmallInfo updated="Laatst aangevuld" new={laatsteLevering} />
+          <SmallInfo updated="Nieuw brood verwacht" new={volgendeLevering} />
         </section>
         <section className="google">
           <GoogleMapsContainer />

@@ -27,7 +27,7 @@ class Breadinfo extends Component {
           <Quantity sort="Grof" quantity={this.props.grof_quantity} />
           <Quantity sort="Bruin" quantity={this.props.bruin_quantity} />
         </div>
-        {this.state.showPopup && <InfoBar straat={this.props.straat} />}
+        {this.state.showPopup && <InfoBar vendor={this.props.vendor} straat={this.props.straat} laatsteLevering={this.props.laatsteLevering} volgendeLevering={this.props.volgendeLevering} />}
       </div>
     );
   }
