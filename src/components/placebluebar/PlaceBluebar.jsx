@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './placebluebar.css';
+
 const PlaceBlueBar = props => {
   return (
     <div className="blue">

@@ -35,4 +35,12 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .infobar {
+    background-color: red;
+    position: absolute;
+    left: 400px;
+    top: -65px;
+    width: 720px;
+    z-index: 4;
+  }
 }

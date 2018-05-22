@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import BigInfo from '../biginfo/BigInfo';
 import SmallInfo from '../smallinfo/SmallInfo';
 import Button from '../button/Button';
-import PopUp from '../popup/PopUp';
 import GoogleMapsContainer from '../googlemapscontainer/GoogleMapsContainer';
+import PopUp from '../popup/PopUp';
 
 import './infobar.css';
 
@@ -23,14 +23,14 @@ class InfoBar extends Component {
   render() {
     return (
       <div className="infobar">
-        <h2>Lange</h2>
+        <h2>{this.props.straat}</h2>
         <section className="all">
           <BigInfo sort="Wit" price="€1,5" />
           <BigInfo sort="Grof" price="€1,5" />
           <BigInfo sort="Bruin" price="€1,5" />
         </section>
         <section className="all_info">
-          <SmallInfo updated="Laatst aangevuld" new="Dinsdag 7 mei 2018" />
+          <SmallInfo updated="Laatst aangevuld" new="test" />
           <SmallInfo updated="Nieuw brood verwacht" new="Dinsdag 8 mei 2018" />
         </section>
         <section className="google">
