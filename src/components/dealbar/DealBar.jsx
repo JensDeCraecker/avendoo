@@ -34,7 +34,7 @@ class DealBar extends Component {
         </section>
         <Button onClickCallback={this.togglePopup}> Melding </Button>
         {this.state.showPopup && (
-          <PopUp text="Melding aangeven" closePopup={this.togglePopup} className="test">
+          <PopUp text="Melding doorgeven" closePopup={this.togglePopup} className="test">
             <Button> INTREKKEN </Button>
             <p onClick={this.togglePopup}>ANNULEREN</p>
           </PopUp>

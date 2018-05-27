@@ -24,6 +24,7 @@ class InfoBar extends Component {
   render() {
     const laatsteLevering = moment(this.props.laatsteLevering).format('DD/MM/YYYY');
     const volgendeLevering = moment(this.props.volgendeLevering).format('DD/MM/YYYY');
+    console.log(this.props.items.items.price);
     return (
       <div className="infobar">
         <h2>{this.props.straat}</h2>

@@ -18,6 +18,7 @@ class Breadinfo extends Component {
     });
   };
   render() {
+    console.log(this.props.items.items.length);
     return (
       <div className="white" onClick={this.togglePopup}>
         <h2>{this.props.straat}</h2>
@@ -27,7 +28,9 @@ class Breadinfo extends Component {
           <Quantity sort="Grof" quantity={this.props.grof_quantity} />
           <Quantity sort="Bruin" quantity={this.props.bruin_quantity} />
         </div>
-        {this.state.showPopup && <InfoBar vendor={this.props.vendor} straat={this.props.straat} laatsteLevering={this.props.laatsteLevering} volgendeLevering={this.props.volgendeLevering} />}
+        {this.state.showPopup && (
+          <InfoBar vendor={this.props.vendor} items={this.props.items} straat={this.props.straat} laatsteLevering={this.props.laatsteLevering} volgendeLevering={this.props.volgendeLevering} />
+        )}
       </div>
     );
   }
