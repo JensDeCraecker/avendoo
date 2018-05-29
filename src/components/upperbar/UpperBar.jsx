@@ -3,7 +3,7 @@ import './upperbar.css';
 
 import moment from 'moment';
 
-import logo from '../../images/logo.png';
+import logo from '../../images/avendoo_logo.png';
 
 const UpperBar = props => {
   const date = moment().format('LLLL');
