@@ -18,7 +18,6 @@ class Breadinfo extends Component {
     });
   };
   render() {
-    console.log(this.props.items.items.length);
     return (
       <div className="white" onClick={this.togglePopup}>
         <h2>{this.props.straat}</h2>
