@@ -23,9 +23,9 @@ class Breadinfo extends Component {
         <h2>{this.props.straat}</h2>
         <h5>{this.props.bakker}</h5>
         <div className="all_bread">
-          <Quantity sort="Wit" quantity={this.props.wit_quantity} />
-          <Quantity sort="Grof" quantity={this.props.grof_quantity} />
-          <Quantity sort="Bruin" quantity={this.props.bruin_quantity} />
+          <Quantity items={this.props.items} sort="Wit" quantity={this.props.wit_quantity} />
+          <Quantity items={this.props.items} sort="Grof" quantity={this.props.grof_quantity} />
+          <Quantity items={this.props.items} sort="Bruin" quantity={this.props.bruin_quantity} />
         </div>
         {this.state.showPopup && (
           <InfoBar vendor={this.props.vendor} items={this.props.items} straat={this.props.straat} laatsteLevering={this.props.laatsteLevering} volgendeLevering={this.props.volgendeLevering} />
