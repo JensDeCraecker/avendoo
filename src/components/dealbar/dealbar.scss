@@ -1,14 +1,18 @@
 @import '../../utils/_colors.scss';
 
 .dealbar {
-  width: 80%;
   border-radius: 10px;
   border: 1px solid $grey-border;
   box-shadow: $box;
   margin: 70px auto;
   display: grid;
   grid-template-rows: 60px 60px 180px 1fr 50px;
-  grid-template-columns: 1fr 1fr 200px;
+  grid-template-columns: 400px 1fr 200px;
+  position: fixed;
+  width: 720px;
+  height: 400px;
+  left: 630px;
+  top: 24px;
   h2 {
     margin-left: 18px;
     font-size: 2.5em;

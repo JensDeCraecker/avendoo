@@ -12,16 +12,10 @@
     margin: 10px 0 0 9px;
     padding: 10px 0 40px;
     font-size: 1em;
-    transition: width 1s;
   }
   input:hover {
-    width: 100px;
   }
-  .fa {
-    position: absolute;
-    top: 15px;
-    left: 270px;
-    color: $blue;
-    font-size: 1.8em;
+  .white {
+    position:static
   }
 }

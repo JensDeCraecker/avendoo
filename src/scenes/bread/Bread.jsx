@@ -7,7 +7,6 @@ import BlueBar from '../../components/bluebar/BlueBar';
 import { connect } from 'react-redux';
 import { allAutomaten } from '../../redux/automaten/actions';
 import { allItems } from '../../redux/items/actions';
-import InfoBar from '../../components/infobar/InfoBar';
 
 class Bread extends Component {
   componentDidMount() {

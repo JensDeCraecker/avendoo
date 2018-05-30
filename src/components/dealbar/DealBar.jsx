@@ -20,11 +20,10 @@ class DealBar extends Component {
     });
   };
   render() {
-    const { automaat } = this.props;
     return (
       <div className="dealbar">
-        <h2>2e brood gratis</h2>
-        <h3>Bakker De Craecker</h3>
+        <h2>{this.props.actie}</h2>
+        <h3>Geldig tot: {this.props.geldigTot} | {this.props.adres}</h3>
         <div className="all">
           <BigInfo sort="Wit" price="€1,5" />
           <BigInfo sort="Grof" price="€1,5" />

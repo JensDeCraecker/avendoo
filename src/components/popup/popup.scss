@@ -10,6 +10,7 @@
   bottom: 0;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
   .popup_inner {
     position: absolute;
     width: 705px;
@@ -24,6 +25,7 @@
     border-left: 4px solid white;
     border-right: 4px solid white;
     border-radius: 10px;
+    z-index: 15;
     h2 {
       padding-left: 22px;
       font-size: 20px;

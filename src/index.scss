@@ -46,6 +46,9 @@ body {
   font-size: 1.4rem;
   text-rendering: geometricPrecision;
 }
+div {
+  position: static;
+}
 
 [class^='icon-']:before,
 [class*=' icon-']:before,

@@ -28,7 +28,6 @@ class Breadinfo extends Component {
         )}
         {this.props.activeBreadinfo && (
           <InfoBar
-            vendor={this.props.vendor}
             items={items}
             automaat={automaat}
             straat={this.props.straat}

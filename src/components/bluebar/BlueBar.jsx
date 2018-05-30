@@ -35,8 +35,7 @@ class BlueBar extends Component {
     const automaten = this.getAutomaten();
     return (
       <div className="blue">
-        <span className="fa fa-search" />
-        <input type="text" value={this.state.search} onChange={this.updateSearch.bind(this)} />
+        <input type="text" placeholder="Straatnaam" value={this.state.search} onChange={this.updateSearch.bind(this)} />
         {automaten.map((automaat, i) => {
           return <BreadInfo key={i} index={i} automaat={automaat} setActive={this.setActive} activeBreadinfo={this.state.activeBreadinfo === i} />;
         })}
