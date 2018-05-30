@@ -11,7 +11,6 @@ class DealsBreadinfo extends Component {
   };
   render() {
     const { aanbiedingen } = this.props.aanbiedingen;
-    console.log(aanbiedingen[this.props.index].omschrijving)
     return (
       <div className="white" onClick={this.setActive}>
         <h2>{this.props.actie}</h2>

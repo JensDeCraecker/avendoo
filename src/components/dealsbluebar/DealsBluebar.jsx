@@ -21,27 +21,19 @@ class DealsBluebar extends Component {
     this.setState({ activeBreadinfo });
   };
 
-  // getAutomaten = () => {
-  //   let { automaten } = this.props.automaten;
-  //   automaten = automaten.filter(automaat => console.log(automaat.adres));
-  //   automaten = automaten.map(automaat => {
-  //     const broden = this.props.items.items.filter(brood => brood.automaat_id === this.props.automaat.automaat.automaat_id);
-  //     automaat.broden = broden;
-  //     return automaat;
-  //   });
-  //   return automaten;
-  // }
-
   render() {
-    // const automaten = this.getAutomaten();
-    // console.log('logger', automaten)
+    let filteredInfo = this.props.aanbiedingen.aanbiedingen;
     return (
       <div className="blue">
-        <input placeholder="Datum" />
-        {this.props.aanbiedingen.aanbiedingen.map((automaat, i) => {
-          const date = moment(automaat.geldigTot).format('DD/MM/YYYY');
-          return <DealsBreadinfo key={i} index={i} aanbiedingen={this.props.aanbiedingen} actie={automaat.actie} geldigTot={date} setActive={this.setActive} activeBreadinfo={this.state.activeBreadinfo === i} />;
-        })}
+        <input placeholder="Actie" value={this.state.search} onChange={this.updateSearch.bind(this)} />
+        {filteredInfo
+          .filter(item => {
+            return item.actie.toLowerCase().indexOf(this.state.search.toLowerCase()) >= 0;
+          })
+          .map((automaat, i) => {
+            const date = moment(automaat.geldigTot).format('DD/MM/YYYY');
+            return <DealsBreadinfo key={i} index={i} aanbiedingen={this.props.aanbiedingen} actie={automaat.actie} geldigTot={date} setActive={this.setActive} activeBreadinfo={this.state.activeBreadinfo === i} />;
+          })}
       </div>
     );
   }
