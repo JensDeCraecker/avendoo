@@ -6,29 +6,35 @@ import InfoBar from '../infobar/InfoBar';
 import './breadinfo.css';
 
 class Breadinfo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showPopup: false,
-    };
-  }
-  togglePopup = () => {
-    this.setState({
-      showPopup: !this.state.showPopup,
-    });
+  setActive = () => {
+    this.props.setActive(this.props.index);
   };
   render() {
+    const { automaat, items } = this.props;
+    const { broden } = automaat;
+    const aantalWit = broden.filter(brood => brood.soort === 'wit').length;
+    const aantalGrof = broden.filter(brood => brood.soort === 'grof').length;
+    const aantalBruin = broden.filter(brood => brood.soort === 'bruin').length;
     return (
-      <div className="white" onClick={this.togglePopup}>
-        <h2>{this.props.straat}</h2>
-        <h5>{this.props.bakker}</h5>
-        <div className="all_bread">
-          <Quantity items={this.props.items} sort="Wit" quantity={this.props.wit_quantity} />
-          <Quantity items={this.props.items} sort="Grof" quantity={this.props.grof_quantity} />
-          <Quantity items={this.props.items} sort="Bruin" quantity={this.props.bruin_quantity} />
-        </div>
-        {this.state.showPopup && (
-          <InfoBar vendor={this.props.vendor} items={this.props.items} straat={this.props.straat} laatsteLevering={this.props.laatsteLevering} volgendeLevering={this.props.volgendeLevering} />
+      <div className="white" onClick={this.setActive}>
+        <h2>{automaat.adres}</h2>
+        <h5>{automaat.omschrijving}</h5>
+        {automaat.broden.length && (
+          <div className="all_bread">
+            <Quantity sort="Wit" quantity={aantalWit} />
+            <Quantity sort="Grof" quantity={aantalGrof} />
+            <Quantity sort="Bruin" quantity={aantalBruin} />
+          </div>
+        )}
+        {this.props.activeBreadinfo && (
+          <InfoBar
+            vendor={this.props.vendor}
+            items={items}
+            automaat={automaat}
+            straat={this.props.straat}
+            laatsteLevering={this.props.laatsteLevering}
+            volgendeLevering={this.props.volgendeLevering}
+          />
         )}
       </div>
     );

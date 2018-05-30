@@ -7,9 +7,11 @@ import DealBar from '../../components/dealbar/DealBar';
 
 import { connect } from 'react-redux';
 import { allAanbiedingen } from '../../redux/aanbiedingen/actions';
+import { allAutomaten } from '../../redux/automaten/actions';
 
 class Deal extends Component {
   componentDidMount() {
+    this.props.dispatchers.allAutomaten();
     this.props.dispatchers.allAanbiedingen();
   }
   render() {
@@ -17,7 +19,7 @@ class Deal extends Component {
       <div className="view">
         <NavBar />
         <UpperBar />
-        <DealsBluebar aanbiedingen={this.props.aanbiedingen} />
+        <DealsBluebar aanbiedingen={this.props.aanbiedingen} automaat={this.props.automaten} />
         <DealBar />
       </div>
     );
@@ -25,12 +27,14 @@ class Deal extends Component {
 }
 
 const mapStateToProps = state => ({
+  automaten: state.automaten,
   aanbiedingen: state.aanbiedingen,
 });
 
 const mapDispatchToProps = dispatch => {
   return {
     dispatchers: {
+      allAutomaten: () => dispatch(allAutomaten()),
       allAanbiedingen: () => dispatch(allAanbiedingen()),
     },
   };

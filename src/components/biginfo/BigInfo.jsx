@@ -5,8 +5,8 @@ import './biginfo.css';
 const BigInfo = props => {
   return (
     <div className="biginfo">
-      <p className="icon-sort">{props.sort}</p>
-      <p className="price">{props.price}</p>
+      <p className="icon-sort">Wit</p>
+      <p className="price">1,5</p>
     </div>
   );
 };

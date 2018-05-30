@@ -20,6 +20,7 @@ class DealBar extends Component {
     });
   };
   render() {
+    const { automaat } = this.props;
     return (
       <div className="dealbar">
         <h2>2e brood gratis</h2>
@@ -29,9 +30,7 @@ class DealBar extends Component {
           <BigInfo sort="Grof" price="€1,5" />
           <BigInfo sort="Bruin" price="€1,5" />
         </div>
-        <section className="google dealgoogle">
-          <GoogleMapsContainer />
-        </section>
+        <section className="google dealgoogle">{/* <GoogleMapsContainer automaat={automaat} /> */}</section>
         <Button onClickCallback={this.togglePopup}> Melding </Button>
         {this.state.showPopup && (
           <PopUp text="Melding doorgeven" closePopup={this.togglePopup} className="test">

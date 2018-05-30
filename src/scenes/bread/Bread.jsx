@@ -20,7 +20,6 @@ class Bread extends Component {
         <NavBar />
         <UpperBar />
         <BlueBar automaten={this.props.automaten} items={this.props.items} />
-        {/* <InfoBar /> */}
       </div>
     );
   }

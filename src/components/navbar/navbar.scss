@@ -17,19 +17,22 @@
     text-decoration: none;
     color: grey;
     display: flex;
-    margin-bottom: 10px;
-    font-family: 'hk_novamedium';
+    margin-bottom: 15px;
+    font-family: 'hk_novaregular';
   }
   .icon-bread:before {
-    content: '\e901';
-    font-size: 27px;
+    content: '\e900';
+    font-size: 20px;
+    margin-top: -1px;
   }
   .icon-place:before {
-    content: '\e903';
-    font-size: 25px;
+    content: '\e948';
+    font-size: 20px;
+    margin-top: -1px;
   }
   .icon-deal:before {
-    content: '\e900';
-    font-size: 27px;
+    content: '\e901';
+    font-size: 20px;
+    margin-top: -1px;
   }
 }

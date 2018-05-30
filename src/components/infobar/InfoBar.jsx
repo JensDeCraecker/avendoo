@@ -22,23 +22,23 @@ class InfoBar extends Component {
     });
   };
   render() {
-    const laatsteLevering = moment(this.props.laatsteLevering).format('DD/MM/YYYY');
-    const volgendeLevering = moment(this.props.volgendeLevering).format('DD/MM/YYYY');
-    console.log(this.props.vendor.automaten.adres);
+    const laatsteLevering = moment(this.props.automaat.laatsteLevering).format('DD/MM/YYYY');
+    const volgendeLevering = moment(this.props.automaat.volgendeLevering).format('DD/MM/YYYY');
+    const { automaat, items } = this.props;
     return (
       <div className="infobar">
-        <h2>{this.props.straat}</h2>
+        <h2>{this.props.automaat.adres}</h2>
         <section className="all">
-          <BigInfo sort="Wit" price="€1,5" />
-          <BigInfo sort="Grof" price="€1,5" />
-          <BigInfo sort="Bruin" price="€1,5" />
+          <BigInfo automaat={automaat} />
+          <BigInfo automaat={automaat} />
+          <BigInfo automaat={automaat} />
         </section>
         <section className="all_info">
           <SmallInfo updated="Laatst aangevuld" new={laatsteLevering} />
           <SmallInfo updated="Nieuw brood verwacht" new={volgendeLevering} />
         </section>
         <section className="google">
-          <GoogleMapsContainer />
+          <GoogleMapsContainer automaat={automaat} />
         </section>
         <Button onClickCallback={this.togglePopup}> Melding </Button>
         {this.state.showPopup && (

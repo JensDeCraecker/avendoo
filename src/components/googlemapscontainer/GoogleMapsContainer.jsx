@@ -29,13 +29,16 @@ class GoogleMapsContainer extends React.Component {
     }
   };
   render() {
+    const { automaat } = this.props;
     const style = {
       width: '30vw',
       height: '35vh',
     };
+    const x = automaat.xcoordinaten;
+    const y = automaat.ycoordinaten;
     return (
-      <Map item xs={12} style={style} google={this.props.google} onClick={this.onMapClick} zoom={14} initialCenter={{ lat: 51.2194475, lng: 4.40246430000002 }}>
-        <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: 51.2194475, lng: 4.40246430000002 }} name={'Changing Colors Garage'} />
+      <Map item xs={12} style={style} google={this.props.google} onClick={this.onMapClick} zoom={12} initialCenter={{ lat: 51.2194475, lng: 4.40246430000002 }}>
+        <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: x, lng: y }} name={'Changing Colors Garage'} />
       </Map>
     );
   }

@@ -36,10 +36,9 @@
     justify-content: space-around;
   }
   .infobar {
-    position: absolute;
-    left: 400px;
-    top: -65px;
+    position: fixed;
     width: 720px;
-    z-index: 4;
+    left: 630px;
+    top: 24px;
   }
 }

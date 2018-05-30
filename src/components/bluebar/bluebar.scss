@@ -3,6 +3,7 @@
 .blue {
   background-color: $blue;
   height: 100vh;
+  overflow: auto;
   input {
     border: 0;
     width: 30px;

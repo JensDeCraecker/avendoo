@@ -3,6 +3,7 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 import UnauthorizedLayout from './routes/UnauthorizedLayout';
 import UnauthorizedRoute from './routes/UnauthorizedRoute';
 import logo from './images/avendoo_logo.png';
+import rolling from './assets/images/rolling.svg';
 
 import './index.scss';
 
@@ -21,7 +22,8 @@ class App extends Component {
 
     if (loading) {
       return (
-        <div>
+        <div className="intro">
+          <img src={rolling} alt="spinner" className="spinner" />
           <img src={logo} alt="avendoo_logo" className="loading" />
         </div>
       );
