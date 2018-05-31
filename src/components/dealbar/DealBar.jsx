@@ -30,7 +30,7 @@ class DealBar extends Component {
           <BigInfo sort="Bruin" price="€1,5" />
         </div>
         <section className="google dealgoogle">{/* <GoogleMapsContainer automaat={automaat} /> */}</section>
-        <Button onClickCallback={this.togglePopup}> Melding </Button>
+        <Button onClickCallback={this.togglePopup} className="melding"> Melding </Button>
         {this.state.showPopup && (
           <PopUp text="Melding doorgeven" closePopup={this.togglePopup} className="test">
             <Button> INTREKKEN </Button>
