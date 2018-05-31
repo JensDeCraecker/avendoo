@@ -9,7 +9,7 @@ svg {
   grid-column: 2;
   justify-self: center;
   margin-top: 20px;
-  margin-left: 90px;
+  margin-left: 140px;
 }
 
 .path {
@@ -36,8 +36,8 @@ svg {
   font-size: 3em;
   grid-row: 3;
   grid-column: 2;
-  margin-left: 90px;
-  margin-top: 50px;
+  margin-left: 140px;
+  margin-top: 70px;
   &.success {
     color: $blue;
   }
