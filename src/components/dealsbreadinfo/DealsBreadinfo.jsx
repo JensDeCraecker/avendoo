@@ -11,17 +11,19 @@ class DealsBreadinfo extends Component {
   };
   render() {
     const { aanbiedingen } = this.props.aanbiedingen;
+    const { automaat } = this.props;
+
     return (
       <div className="white" onClick={this.setActive}>
         <h2>{this.props.actie}</h2>
-        <h5>Geldig tot: {this.props.geldigTot} | {aanbiedingen[this.props.index].adres}</h5>
+        <h5>{aanbiedingen[this.props.index].adres}</h5>
         <div className="all_bread">
           <Quantity sort="Wit" />
           <Quantity sort="Grof" />
           <Quantity sort="Bruin" />
         </div>
         {this.props.activeBreadinfo && (
-          <DealBar actie={this.props.actie} geldigTot={this.props.geldigTot} adres={aanbiedingen[this.props.index].adres} />
+          <DealBar automaat={automaat} actie={this.props.actie} geldigTot={this.props.geldigTot} adres={aanbiedingen[this.props.index].adres} />
         )}
       </div>
     );

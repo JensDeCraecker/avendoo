@@ -36,7 +36,7 @@ class PopUp extends Component {
           <section>
             <Toggler />
           </section>
-          <Button onClickCallback={this.togglePopup}> Verzenden </Button>
+          <Button onClickCallback={this.togglePopup} > Verzenden </Button>
           {this.state.showPopup && <SendPopUp text="Verzonden" closePopup={this.togglePopup} className="test" />}
         </div>
       </div>

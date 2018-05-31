@@ -6,11 +6,11 @@
   box-shadow: $box;
   margin: 70px auto;
   display: grid;
-  grid-template-rows: 60px 60px 180px 1fr 50px;
-  grid-template-columns: 400px 1fr 200px;
+  grid-template-rows: 60px 60px 180px 1fr 50px 50px;
+  grid-template-columns: 150px 200px 200px;
   position: fixed;
   width: 720px;
-  height: 400px;
+  height: 500px;
   left: 630px;
   top: 24px;
   h2 {
@@ -26,11 +26,12 @@
     margin-left: 18px;
     margin-top: 0;
     color: $grey-text;
+    grid-column: 1;
   }
   .all {
     grid-row: 3;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     display: flex;
     justify-content: space-around;
   }
@@ -50,10 +51,16 @@
     background-color: $grey;
     border: 0;
     box-shadow: $box;
-    grid-row: 5;
-    grid-column: 3;
+    grid-row: 6;
+    grid-column: 4;
     justify-self: center;
     margin-bottom: 10px;
+    margin-right: 10px;
     font-family: 'hk_novaregular';
+  }
+  .smallinfo{
+    grid-column: 4;
+    grid-row:4;
+    margin-right: 30px;
   }
 }

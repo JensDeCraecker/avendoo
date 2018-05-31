@@ -32,7 +32,7 @@ class DealsBluebar extends Component {
           })
           .map((automaat, i) => {
             const date = moment(automaat.geldigTot).format('DD/MM/YYYY');
-            return <DealsBreadinfo key={i} index={i} aanbiedingen={this.props.aanbiedingen} actie={automaat.actie} geldigTot={date} setActive={this.setActive} activeBreadinfo={this.state.activeBreadinfo === i} />;
+            return <DealsBreadinfo key={i} index={i} automaat={automaat} aanbiedingen={this.props.aanbiedingen} actie={automaat.actie} geldigTot={date} setActive={this.setActive} activeBreadinfo={this.state.activeBreadinfo === i} />;
           })}
       </div>
     );

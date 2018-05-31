@@ -38,7 +38,7 @@
       width: 20%;
       height: 20px;
       grid-row: 1;
-      grid-column: 3;
+      grid-column: 4;
       justify-self: end;
       margin: 2.2em;
     }
@@ -53,6 +53,7 @@
       justify-self: center;
       grid-row-start: 5;
       grid-row-end: 7;
+      grid-column: 4
     }
     label {
       font-size: 1.4em;

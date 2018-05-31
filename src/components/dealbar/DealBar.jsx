@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Button from '../button/Button';
 import BigInfo from '../biginfo/BigInfo';
 import PopUp from '../popup/PopUp';
-import GoogleMapsContainer from '../googlemapscontainer/GoogleMapsContainer';
+import SmallInfo from '../smallinfo/SmallInfo';
 
 import './dealbar.css';
 
@@ -20,15 +20,17 @@ class DealBar extends Component {
     });
   };
   render() {
+    const { automaat } = this.props;
     return (
       <div className="dealbar">
         <h2>{this.props.actie}</h2>
-        <h3>Geldig tot: {this.props.geldigTot} | {this.props.adres}</h3>
+        <h3> {this.props.adres}</h3>
         <div className="all">
-          <BigInfo sort="Wit" price="€1,5" />
-          <BigInfo sort="Grof" price="€1,5" />
-          <BigInfo sort="Bruin" price="€1,5" />
+          <BigInfo sort="Wit" automaat={automaat} />
+          <BigInfo sort="Grof" automaat={automaat} />
+          <BigInfo sort="Bruin" automaat={automaat} />
         </div>
+        <SmallInfo updated="Geldig tot" new={this.props.geldigTot} />
         <section className="google dealgoogle">{/* <GoogleMapsContainer automaat={automaat} /> */}</section>
         <Button onClickCallback={this.togglePopup} className="melding"> Melding </Button>
         {this.state.showPopup && (

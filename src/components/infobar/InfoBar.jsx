@@ -24,14 +24,14 @@ class InfoBar extends Component {
   render() {
     const laatsteLevering = moment(this.props.automaat.laatsteLevering).format('DD/MM/YYYY');
     const volgendeLevering = moment(this.props.automaat.volgendeLevering).format('DD/MM/YYYY');
-    const { automaat, items } = this.props;
+    const { automaat } = this.props;
     return (
       <div className="infobar">
         <h2>{this.props.automaat.adres}</h2>
         <section className="all">
-          <BigInfo automaat={automaat} />
-          <BigInfo automaat={automaat} />
-          <BigInfo automaat={automaat} />
+          <BigInfo sort="Wit" automaat={automaat} />
+          <BigInfo sort="Grof" automaat={automaat} />
+          <BigInfo sort="Bruin" automaat={automaat} />
         </section>
         <section className="all_info">
           <SmallInfo updated="Laatst aangevuld" new={laatsteLevering} />
