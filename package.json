@@ -2,10 +2,12 @@
   "name": "avendoo",
   "description": "Avendoo",
   "version": "0.1.0",
+  "homepage": "http://jensdecraecker.github.io/avendoo",
   "dependencies": {
     "axios": "~0.18.0",
     "connect": "^3.6.6",
     "date-fns": "^1.29.0",
+    "gh-pages": "^1.1.0",
     "google-maps-react": "^2.0.2",
     "moment": "^2.22.1",
     "node-sass-chokidar": "~0.0.3",
@@ -31,7 +33,9 @@
     "test": "react-scripts test --env=jsdom",
     "lint": "./node_modules/.bin/eslint -c .eslintrc --ext .jsx --ext .js src",
     "validate": "yarn lint && yarn test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
