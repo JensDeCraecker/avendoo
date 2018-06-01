@@ -19,6 +19,7 @@ class InfoBar extends Component {
   togglePopup = () => {
     this.setState({
       showPopup: !this.state.showPopup,
+
     });
   };
   render() {
