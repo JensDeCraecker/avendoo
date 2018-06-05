@@ -1,7 +1,10 @@
-div {
-  position: relative;
-  .placegoogle {
-    margin-left: 28px;
-    margin-top: 28px;
+.infobar {
+  margin-top: 20px;
+    div {
+    .placegoogle {
+      position: absolute;
+      left: 660px;
+      top: 110px;
+    } 
   }
 }
