@@ -15,7 +15,6 @@ class BlueBar extends Component {
 
   updateSearch(e) {
     this.setState({ search: e.target.value });
-    console.log(process.env);
   }
   setActive = activeBreadinfo => {
     this.setState({ activeBreadinfo });
