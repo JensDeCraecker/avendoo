@@ -59,6 +59,12 @@ class GoogleMapsContainerPlace extends React.Component {
     );
   }
 }
+const key = 'AIzaSyCSFyI_4pzu903BlxsqinAXl-NI7yIJbtE';
+
 export default GoogleApiWrapper({
+<<<<<<< HEAD
   api: 'AIzaSyCqiJnEqUM23GpIqZK3nIgPaEy-CVwI_Vw',
+=======
+  apiKey: key,
+>>>>>>> develop
 })(GoogleMapsContainerPlace);
