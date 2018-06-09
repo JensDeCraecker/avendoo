@@ -8,3 +8,223 @@
     grid-template-columns: 220px 320px 1fr;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .unauth-layout{
+      .view{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 65px 150px 390px;
+        grid-template-columns:1fr;
+
+      }
+      .upperbar{
+        grid-row: 1;
+        width: 375px;
+        grid-template-columns: 1fr 160px;
+        h6{
+          font-size: 0.6em;
+          margin-top: 30px;
+        }
+        img{
+          width: 30%;
+          margin-top: 13px;
+        }
+      }
+      .app-header{
+        grid-row:4;
+        width: 90%;
+        height: 1px;
+        display: flex;
+        width: 82%;
+        z-index: 15;
+        a{
+          margin-right: 30px;
+          margin-top: -12px;
+        }
+        h2{
+          display: none;
+        }
+      }
+      .infobar{
+        width: 93%;
+        height: 469px;
+        position: fixed;
+        top: 107px;
+        left: 7px;
+        .wheregoogle{
+          .placegoogle{
+            left: 0;
+            top:0;
+            margin: 5px;
+            margin-top: 10px;
+            width: 91vw;
+            height: 67vh;
+          }
+        }
+      }
+      .blue{
+        grid-row:2;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        width: 100vw;
+        input{
+          display: none;
+        }
+        .special{
+          height: 20px;
+        }
+          .white{
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 14px;
+            grid-template-rows: 15px 30px 90px;
+            h2{
+              font-size: 0.58em;
+            }
+            h5{
+              font-size: 0.5em;
+            }
+            .all_bread{
+              display: inline;
+            }
+            .quantity{
+              width: 75px;
+              height: 20px;
+              display: grid;
+              margin-bottom: 10px;
+              grid-template-columns: 39px 1fr;
+              .icon-sort {
+                margin-top: 3px;
+              }
+              .icon-sort:before {
+                font-size: 7px;
+              }
+              .number {
+                font-size: 0.5em;
+                grid-column: 2;
+                margin-top: 5px;
+                font-weight: bold;
+              }
+              p{
+                font-size: 0.7em;
+              }
+            }          
+          .infobar, .dealbar{
+            left: 6px;
+            top:224px;
+            height: 350px;   
+            width: 93%;
+            grid-template-rows: 40px 100px 1fr 50px;
+            grid-template-columns: 1fr 1fr 150px;
+            h2{
+              font-size: 1em;
+            }
+            .google{
+              margin-top: 90px;
+              width: 55vw;
+              height: 27vh;
+            }
+            .popup{
+              .popup_inner{
+                width: 351px;
+                left: 0.7%;
+                grid-template-rows: 55px 26px 30px 30px 30px;
+                button{
+                  width: 72%;
+                  margin-top: 24px;
+                }
+                label{
+                  font-size: 1em;
+                }
+                .close{
+                  margin: 1.7em;
+                  width: 25%;
+                }
+              }
+              .sendpopup{
+                .sendpopup_inner{
+                  width: 351px;
+                  height:214px;
+                  left: 1%;
+                  svg{
+                    width: 130px;
+                    grid-column: 2;
+                    justify-self: center;
+                    margin-top: 20px;
+                    margin-left: 65px
+                  }
+                  .success{
+                    margin-left: 55px;
+                    margin-top: 40px;
+                  }
+                }
+              }
+            }
+            .all_info{
+              margin-top: -10px;
+              width: 40%;
+              font-size: 0.8em;
+              justify-self: end;
+              margin-right: 24px;
+              .smallinfo{
+                padding: 2px;
+                height: 50px;
+                width: 104%;
+                .updated{
+                  padding-top: 0px;
+                  font-size: 0.6em;
+                }
+              }
+            }
+            button{
+              font-size: 0.7em;
+              width: 44%;
+              height: 30px;
+              justify-self: end;
+              margin-right: 20px;
+            }
+            .biginfo{
+              height: 80px;
+              .icon-sort {
+                font-size: 1em;
+              }
+              .icon-sort:before {
+                font-size: 0.7em;
+              }
+              .price{
+                font-size: 1.2em;
+                margin-top: 0;
+              }
+            }
+            }
+            .dealbar{
+              grid-template-rows: 30px 50px 80px 70px;
+              grid-template-columns: 1fr 1fr 50px;
+              margin-top: 20px;
+              h3{
+                font-size: 0.8em;
+              }
+              .biginfo{
+                width: 20%;
+              }
+              .smallinfo{
+                font-size: 0.8em;
+                height: 60px;
+                margin-right: 24px;
+              }
+              button{
+                margin-right: 28px;
+                width: 70%;
+                margin-top: 40px;
+              }
+            }
+          }
+      }
+      .placebb{
+        height: 35px;
+      }
+  }
+}

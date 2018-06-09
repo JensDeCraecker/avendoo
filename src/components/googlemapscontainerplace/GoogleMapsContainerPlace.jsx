@@ -31,13 +31,9 @@ class GoogleMapsContainerPlace extends React.Component {
     }
   };
   render() {
-    const style = {
-      width: '46vw',
-      height: '76vh',
-    };
     return (
       <section className="placegoogle">
-        <Map item xs={12} style={style} google={this.props.google} onClick={this.onMapClick} zoom={13} initialCenter={{ lat: 51.2194475, lng: 4.40246430000002 }}>
+        <Map item xs={12} google={this.props.google} onClick={this.onMapClick} zoom={13} initialCenter={{ lat: 51.2194475, lng: 4.40246430000002 }}>
           <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: 51.2194475, lng: 4.40246430000002 }} name={'Changing Colors Garage'} />
           <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: 51.22978819999999, lng: 4.417160400000057 }} name={'Changing Colors Garage'} />
           <Marker onClick={this.onMarkerClick} title={'Changing Colors Garage'} position={{ lat: 51.200305, lng: 4.395790000000034 }} name={'Changing Colors Garage'} />
