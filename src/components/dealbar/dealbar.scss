@@ -6,7 +6,7 @@
   box-shadow: $box;
   margin: 70px auto;
   display: grid;
-  grid-template-rows: 60px 60px 180px 1fr 50px 50px;
+  grid-template-rows: 60px 60px 180px 150px;
   grid-template-columns: 150px 200px 200px;
   position: fixed;
   width: 720px;
@@ -51,7 +51,7 @@
     background-color: $grey;
     border: 0;
     box-shadow: $box;
-    grid-row: 6;
+    grid-row: 5;
     grid-column: 4;
     justify-self: center;
     margin-bottom: 10px;
@@ -62,5 +62,6 @@
     grid-column: 4;
     grid-row:4;
     margin-right: 30px;
+    height: 70px;
   }
 }
