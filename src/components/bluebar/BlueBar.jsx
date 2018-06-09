@@ -32,6 +32,9 @@ class BlueBar extends Component {
   };
 
   render() {
+    if (window.location.pathname === '/waar') {
+      console.log('true')
+    }
     const automaten = this.getAutomaten();
     return (
       <div className="blue">

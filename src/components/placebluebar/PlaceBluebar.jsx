@@ -4,7 +4,7 @@ import './placebluebar.css';
 
 const PlaceBlueBar = props => {
   return (
-    <div className="blue">
+    <div className="blue placebb">
       {props.automaten.automaten.map((item, i) => {
         return (
           <div key={i} className="white special">
