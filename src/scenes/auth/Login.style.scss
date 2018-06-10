@@ -37,7 +37,7 @@
         height: 1px;
         display: flex;
         width: 82%;
-        z-index: 15;
+        z-index: 20;
         a{
           margin-right: 30px;
           margin-top: -12px;
@@ -52,6 +52,7 @@
         position: fixed;
         top: 107px;
         left: 11px;
+        margin-bottom: 0px;
         .wheregoogle{
           .placegoogle{
             left: 0;
