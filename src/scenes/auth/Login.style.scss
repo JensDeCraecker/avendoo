@@ -14,20 +14,20 @@
       .view{
         height: 100vh;
         display: grid;
-        grid-template-rows: 65px 150px 390px;
+        grid-template-rows: 50px 170px 410px 150px;
         grid-template-columns:1fr;
 
       }
       .upperbar{
         grid-row: 1;
         width: 375px;
-        grid-template-columns: 1fr 160px;
+        grid-template-columns: 1fr 150px;
         h6{
           font-size: 0.6em;
-          margin-top: 30px;
+          margin-top: 23px;
         }
         img{
-          width: 30%;
+          width: 20%;
           margin-top: 13px;
         }
       }
@@ -51,7 +51,7 @@
         height: 469px;
         position: fixed;
         top: 107px;
-        left: 7px;
+        left: 11px;
         .wheregoogle{
           .placegoogle{
             left: 0;
@@ -75,6 +75,9 @@
         }
         .special{
           height: 20px;
+          h2{
+            margin-left: -2px;
+          }
         }
           .white{
             margin-right: 10px;
@@ -85,10 +88,11 @@
               font-size: 0.58em;
             }
             h5{
-              font-size: 0.5em;
+              font-size: 0.48em;
             }
             .all_bread{
               display: inline;
+              margin-top: 10px;
             }
             .quantity{
               width: 75px;
@@ -113,7 +117,7 @@
               }
             }          
           .infobar, .dealbar{
-            left: 6px;
+            left: 11px;
             top:224px;
             height: 350px;   
             width: 93%;
@@ -171,7 +175,7 @@
               margin-right: 24px;
               .smallinfo{
                 padding: 2px;
-                height: 50px;
+                height: 54px;
                 width: 104%;
                 .updated{
                   padding-top: 0px;
@@ -185,6 +189,7 @@
               height: 30px;
               justify-self: end;
               margin-right: 20px;
+              margin-top: 3px;
             }
             .biginfo{
               height: 80px;
